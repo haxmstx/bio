@@ -1,52 +1,55 @@
-/* Стили для кнопки */
-.dropbtn {
-    background-color: #4CAF50; /* Зеленый цвет */
+/* Стили для body (серый фон) */
+body {
+    background-color: #333; /* Темно-серый фон */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-/* Стили для кнопки при наведении */
-.dropbtn:hover {
-    background-color: #45a049;
+/* Центральный контейнер (черный фон) */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота на весь экран */
 }
 
-/* Контейнер для выпадающего меню */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
+/* Контент (черный фон) */
+.content {
+    background-color: #000; /* Черный фон */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Стили для выпадающего меню */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-/* Стили для ссылок в выпадающем меню */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+/* Стили для ссылок */
+.links a {
+    color: white; /* Белый цвет текста */
     text-decoration: none;
     display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #444; /* Темно-серый фон для ссылок */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
 }
 
 /* Стили для ссылок при наведении */
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    border-radius: 5px;
+.links a:hover {
+    background-color: #555; /* Светло-серый фон */
 }
 
-/* Показываем выпадающее меню при наведении */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Стили для ссылок при нажатии */
+.links a:active {
+    background-color: red; /* Красный фон */
+    animation: blink 0.5s; /* Анимация мигания */
+}
+
+/* Анимация мигания */
+@keyframes blink {
+    0% { background-color: red; }
+    50% { background-color: #444; }
+    100% { background-color: red; }
 }
