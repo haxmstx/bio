@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bio</title>
-    <style>
-        .container {
-            font-family: Bold, sans-serif;
-            margin: 20px;
-        }
-        .container p {
-            margin-bottom: 10px;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links p {
-            margin-bottom: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>MY BIO</h1>
-        <p>name - - kittylnx</p>
-        <p>country - - Russia</p>
-        <p>age - - ?</p>
-        
-        <div class="social-links">
-            <p>Roblox - - @haxmstx</p>
-            <p>Ig - - rp_bangclaw</p>
-            <p>fun fact - - in so stupid</p>
-        </div>
-    </div>
-</body>
-</html>
+body {
+    font-family: Bold, sans-serif;
+    background-color: #a4a4ab;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 20px;
+    color: #ffffff
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
