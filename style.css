@@ -1,13 +1,13 @@
-/* Стили для body (серый фон) */
+/* Стили для body (белый фон) */
 body {
-    background-color: #333; /* Темно-серый фон */
+    background-color: white; /* Белый фон */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: white;
+    color: white; /* Белый текст для контейнера */
 }
 
-/* Центральный контейнер (черный фон) */
+/* Центральный контейнер */
 .main-container {
     display: flex;
     justify-content: center;
@@ -17,11 +17,11 @@ body {
 
 /* Контент (черный фон) */
 .content {
-    background-color: #000; /* Черный фон */
+    background-color: black; /* Черный фон */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень */
 }
 
 /* Стили для ссылок */
@@ -31,7 +31,7 @@ body {
     display: block;
     margin: 10px 0;
     padding: 10px;
-    background-color: #444; /* Темно-серый фон для ссылок */
+    background-color: #333; /* Темно-серый фон для ссылок */
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Плавное изменение цвета */
 }
@@ -50,6 +50,6 @@ body {
 /* Анимация мигания */
 @keyframes blink {
     0% { background-color: red; }
-    50% { background-color: #444; }
+    50% { background-color: #333; }
     100% { background-color: red; }
 }
