@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    color: #000000;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
     padding: 0 20px;
 }
@@ -22,6 +22,6 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #3e3d63;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
