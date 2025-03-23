@@ -1,55 +1,28 @@
-/* Стили для body (белый фон) */
 body {
-    background-color: white; /* Белый фон */
+    font-family: Bold, sans-serif;
+    background-color: #a4a4ab;
+    color: #666;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    color: white; /* Белый текст для контейнера */
 }
 
-/* Центральный контейнер */
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Высота на весь экран */
-}
-
-/* Контент (черный фон) */
-.content {
-    background-color: black; /* Черный фон */
-    padding: 20px;
-    border-radius: 10px;
+h1 {
+    color: #ffffff;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень */
+    margin-top: 30px;
 }
 
-/* Стили для ссылок */
-.links a {
-    color: white; /* Белый цвет текста */
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #333; /* Темно-серый фон для ссылок */
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+p {
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 20px;
+    color: #ffffff
 }
 
-/* Стили для ссылок при наведении */
-.links a:hover {
-    background-color: #555; /* Светло-серый фон */
-}
-
-/* Стили для ссылок при нажатии */
-.links a:active {
-    background-color: red; /* Красный фон */
-    animation: blink 0.5s; /* Анимация мигания */
-}
-
-/* Анимация мигания */
-@keyframes blink {
-    0% { background-color: red; }
-    50% { background-color: #333; }
-    100% { background-color: red; }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
