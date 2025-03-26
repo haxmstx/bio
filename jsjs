@@ -1,0 +1,15 @@
+<script>
+document.querySelectorAll('img').forEach(img => {
+    img.style.pointerEvents = 'none';
+});
+
+document.querySelectorAll('a img').forEach(img => {
+    const link = img.closest('a');
+    if (link) {
+        link.addEventListener('click', (e) => {
+            e.preventDefault()
+            e.stopPropagation()
+        });
+    }
+});
+</script>
