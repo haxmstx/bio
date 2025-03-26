@@ -15,26 +15,23 @@
         <p>roblox - - @haxmstx</p>
         <p>telegram - - @rp_bangclaw</p>
         <p>fun fact - - im so stupid</p>
-        <a href="https://ibb.co/6RMwGMsF"><img src="https://i.ibb.co/5W04C0cL/itsme.png" alt="itsme" border="0.5"></a>
+        <a href="https://ibb.co/6752ZwPN"><img src="https://i.ibb.co/LXfMPRtv/itsme.png" alt="itsme" border="0"></a>
     </div>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Отключаем все клики по картинкам
     const images = document.querySelectorAll('img');
     images.forEach(img => {
         img.style.pointerEvents = 'none';
     });
 
-    // 2. Удаляем все ссылки (<a>), оборачивающие картинки
     const imgLinks = document.querySelectorAll('a img');
     imgLinks.forEach(img => {
         const link = img.closest('a');
         if (link) {
-            link.replaceWith(img); // Заменяем ссылку на саму картинку
+            link.replaceWith(img);
         }
     });
 
-    // 3. Отключаем обработчики событий (на всякий случай)
     images.forEach(img => {
         img.onclick = null;
         img.removeAttribute('onclick');
